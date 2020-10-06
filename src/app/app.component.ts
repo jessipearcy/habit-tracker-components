@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
 import { Habit } from './models/habit';
 
 @Component({
@@ -8,5 +7,22 @@ import { Habit } from './models/habit';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
+  public formOpen = false;
+  public editHabit: Habit;
+
   ngOnInit(): void {}
+
+  onAdding() {
+    this.formOpen = true;
+  }
+
+  closeForm() {
+    this.formOpen = false;
+    this.editHabit = null;
+  }
+
+  onEditing(habit: Habit) {
+    this.editHabit = habit;
+    this.formOpen = true;
+  }
 }

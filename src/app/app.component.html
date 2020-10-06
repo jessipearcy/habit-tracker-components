@@ -1,7 +1,12 @@
 <app-toolbar></app-toolbar>
-<app-habit-form></app-habit-form>
-<app-all-habits></app-all-habits>
 
 
+<app-habit-form *ngIf="formOpen; else allHabits" 
+  (onExit)="closeForm()"
+  [habit]="editHabit"></app-habit-form>
 
-
+<ng-template #allHabits>
+  <app-all-habits 
+    (addEvent)="onAdding()"
+    (editEvent)="onEditing($event)"></app-all-habits>
+</ng-template>
