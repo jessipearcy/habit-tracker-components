@@ -1,6 +1,10 @@
-# HabitTracker Split Files
+# HabitTracker Components
 
-These are resource files for readers who are about halfway through a coding tutorial to use in case they've gotten a little lost!
+Follow along in this tutorial to learn about Input and Output properties in Angular!
+
+[Inputs and Outputs: Working With Angular Components](https://medium.com/better-programming/inputs-and-outputs-working-with-angular-components-f3204e6599f)
+
+[Stackblitz Demo](https://stackblitz.com/edit/habit-tracker-components?file=src/app/app.component.ts)
 
 
 ## Development server
